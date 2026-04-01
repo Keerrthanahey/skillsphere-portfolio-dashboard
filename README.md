@@ -36,5 +36,5 @@ Secured 3rd place in a UI/UX Hackathon
 
 
 ## 👥 Team Members
-N T Keerrthana
+N T Keerrthana and 
 Shashanka Sekar
