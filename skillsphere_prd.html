@@ -1,0 +1,34 @@
+# SkillSphere Product Requirements Document
+
+## Project Overview
+SkillSphere is a comprehensive platform designed for students to build professional portfolios, track career opportunities (internships and freelance work), and manage their skill development.
+
+## Core Features & Screens
+
+### 1. Authentication (Login/Signup)
+*   **Layout:** Split screen with a brand illustration/marketing message on one side and the form on the other.
+*   **Functionality:** Mock Google login, Email/Password validation, and loading states.
+*   **UX:** Smooth redirect to dashboard upon "success".
+
+### 2. Home Dashboard
+*   **Internship Tracker:** Visual summary of applications (Applied, Shortlisted, etc.).
+*   **Skills Tracker:** Animated progress bars showing skill proficiency and market relevance.
+*   **Freelance Tracker:** Overview of active/completed projects and earnings.
+*   **UX:** Hover effects on cards, entrance animations for data visualizations.
+
+### 3. Portfolio Manager (AI-Powered)
+*   **Input:** "Paste resume" text area.
+*   **Action:** "Generate Portfolio" with a simulated "AI processing" loading state.
+*   **Output:** Editable sections for About, Projects, and Experience.
+*   **AI Suggestions:** Floating bubbles offering UX/content improvements.
+
+### 4. Search Opportunities
+*   **Search/Filter:** Real-time filtering by location, skills, and stipend.
+*   **Results:** Interactive cards with "Match Scores" and "Apply" buttons that update state instantly.
+
+## Technical & Design Requirements
+*   **Default Mode:** Dark mode with blue/purple accents.
+*   **Visual Style:** Glassmorphism, elevated floating elements, and soft glows.
+*   **Responsiveness:** Mobile-first with a bottom nav; Sidebar for desktop.
+*   **Interactions:** No dead clicks. All buttons must trigger a state change, animation, or navigation.
+*   **State Management:** Mock backend to maintain user profile and application data across "pages".

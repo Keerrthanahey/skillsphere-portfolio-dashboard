@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#b41340",
+              "error-dim": "#a70138",
+              "secondary-dim": "#5819db",
+              "tertiary": "#006571",
+              "tertiary-fixed": "#00e3fd",
+              "tertiary-container": "#00e3fd",
+              "surface-variant": "#d7dcef",
+              "surface": "#0a0e17",
+              "tertiary-dim": "#005863",
+              "inverse-primary": "#7387ff",
+              "on-surface-variant": "#585b66",
+              "surface-container-low": "#0f131d",
+              "surface-bright": "#f5f6ff",
+              "surface-container-lowest": "#000000",
+              "on-primary-fixed-variant": "#001a88",
+              "on-primary-container": "#001470",
+              "primary-fixed-dim": "#778aff",
+              "on-secondary-fixed": "#3b00a0",
+              "on-tertiary-fixed": "#003840",
+              "inverse-on-surface": "#999ca9",
+              "primary-dim": "#0934e0",
+              "surface-container-highest": "#202633",
+              "on-primary-fixed": "#000000",
+              "secondary-container": "#d8caff",
+              "on-tertiary": "#d8f8ff",
+              "outline": "#444852",
+              "primary": "#2444eb",
+              "on-primary": "#f3f1ff",
+              "primary-container": "#8999ff",
+              "secondary-fixed-dim": "#cabaff",
+              "on-background": "#ebedfb",
+              "error-container": "#f74b6d",
+              "surface-container": "#181c26",
+              "primary-fixed": "#8999ff",
+              "surface-container-high": "#282c37",
+              "surface-dim": "#0a0e17",
+              "on-error-container": "#510017",
+              "inverse-surface": "#ebedfb",
+              "tertiary-fixed-dim": "#00d4ec",
+              "surface-tint": "#2444eb",
+              "on-secondary-fixed-variant": "#591bdc",
+              "secondary": "#652fe7",
+              "on-surface": "#ebedfb",
+              "on-tertiary-container": "#004d57",
+              "on-error": "#ffefef",
+              "background": "#0a0e17",
+              "outline-variant": "#444852",
+              "on-secondary": "#f7f0ff",
+              "on-secondary-container": "#5000d2",
+              "secondary-fixed": "#d8caff",
+              "on-tertiary-fixed-variant": "#005762"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(32, 38, 51, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .apply-glow {
+            box-shadow: 0 0 20px rgba(36, 68, 235, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-[#0f131d]/70 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full shadow-[0_10px_30px_rgba(61,90,254,0.08)] bg-gradient-to-b from-[#9ba8ff1a] to-transparent">
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#202633]/50 transition-colors active:scale-95 transition-transform duration-200 text-[#ebedfb]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-[#ebedfb]">Opportunity Details</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-[#202633]/50 transition-colors active:scale-95 transition-transform duration-200 text-[#ebedfb]">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="pt-16 max-w-4xl mx-auto px-4 md:px-8">
+<!-- Hero Section -->
+<section class="mt-6 rounded-3xl overflow-hidden relative h-[300px] md:h-[400px]">
+<img alt="Tech Office" class="w-full h-full object-cover" data-alt="modern glass office interior with designer workstations, lush indoor plants, and soft cool ambient lighting in a tech creative environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4vGn6_G-gvWNj4VKwiXmFIwsGWtxtpNAqoaFylcxhkWZkISl3mSsa9vtSlHdn4gbWwuEBNQg2yVx5wncb9CXjnw-wNGYfnNsT7A1mqKUuGTFFuMoC9n_FxVY2FprhQ7RH7bDNFLSgMy7KzCPDLYTSH8TIDkTiaipGLGsKXkwx2jIyot8WbcpaXjYGryg1xVbubOTJquYyRXLGwDo92AZ4jd02e7uH0DPRg4onN9t7PmdHFxl0YTaWh975P6LxjjIedaDhn-muDS8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<span class="font-headline font-bold text-xl tracking-tight text-white">Lumina Systems</span>
+</div>
+<h2 class="font-headline font-extrabold text-3xl md:text-5xl tracking-tight text-white mb-4">Senior UI/UX Designer</h2>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-1.5 rounded-full bg-primary/20 text-primary-container text-xs font-semibold backdrop-blur-md border border-primary/20">Remote</span>
+<span class="px-4 py-1.5 rounded-full bg-secondary/20 text-secondary-fixed-dim text-xs font-semibold backdrop-blur-md border border-secondary/20">Full-time</span>
+<span class="px-4 py-1.5 rounded-full bg-tertiary/20 text-tertiary-fixed text-xs font-semibold backdrop-blur-md border border-tertiary/20">$4,000 - $6,000 / mo</span>
+</div>
+</div>
+</section>
+<!-- Content Grid -->
+<div class="mt-12 space-y-10">
+<!-- Description -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="text-xs font-medium uppercase tracking-[0.2em] text-on-surface-variant block mb-2">The Mission</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">Description</h3>
+</div>
+<div class="md:col-span-8 glass-card p-8 rounded-3xl border border-outline-variant/10">
+<p class="text-on-surface/80 leading-relaxed text-lg mb-4">
+                        We are looking for a visionary Senior UI/UX Designer to join our product team at Lumina Systems. You will be the architect of our digital experiences, shaping how millions of users interact with our next-generation ecosystem.
+                    </p>
+<p class="text-on-surface/80 leading-relaxed">
+                        In this role, you will bridge the gap between complex engineering and human-centric design, creating fluid, ethereal interfaces that feel intuitive and powerful.
+                    </p>
+</div>
+</section>
+<!-- Requirements (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="text-xs font-medium uppercase tracking-[0.2em] text-on-surface-variant block mb-2">The Bar</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">Requirements</h3>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="draw">draw</span>
+<h4 class="font-bold text-lg mb-2">Advanced Figma</h4>
+<p class="text-sm text-on-surface-variant">Expertise in auto-layout, design systems, and advanced prototyping components.</p>
+</div>
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-secondary mb-4" data-icon="code">code</span>
+<h4 class="font-bold text-lg mb-2">React Knowledge</h4>
+<p class="text-sm text-on-surface-variant">Ability to collaborate closely with front-end engineers and understand framework constraints.</p>
+</div>
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="history_edu">history_edu</span>
+<h4 class="font-bold text-lg mb-2">3+ Years Exp</h4>
+<p class="text-sm text-on-surface-variant">Proven track record of shipping successful high-scale consumer products.</p>
+</div>
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-error mb-4" data-icon="psychology">psychology</span>
+<h4 class="font-bold text-lg mb-2">User Centricity</h4>
+<p class="text-sm text-on-surface-variant">Deep understanding of accessibility, user psychology, and usability testing.</p>
+</div>
+</div>
+</section>
+<!-- Compensation & Accordions -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="text-xs font-medium uppercase tracking-[0.2em] text-on-surface-variant block mb-2">Growth &amp; Perks</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">Benefits</h3>
+</div>
+<div class="md:col-span-8 space-y-4">
+<div class="glass-card p-6 rounded-3xl border border-outline-variant/10">
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface/90">Comprehensive Health &amp; Dental Insurance</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface/90">Remote-first Work Culture</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface/90">Annual Learning Stipend ($2.5k)</span>
+</li>
+</ul>
+</div>
+<!-- Accordions -->
+<div class="space-y-2">
+<div class="group bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-5 text-left hover:bg-surface-container-high transition-colors">
+<span class="font-bold text-on-surface">Company Culture</span>
+<span class="material-symbols-outlined group-hover:translate-y-0.5 transition-transform" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<div class="group bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-5 text-left hover:bg-surface-container-high transition-colors">
+<span class="font-bold text-on-surface">Detailed Tech Stack</span>
+<span class="material-symbols-outlined group-hover:translate-y-0.5 transition-transform" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Deadline Footer Info -->
+<section class="pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div>
+<span class="text-xs font-medium uppercase tracking-[0.2em] text-on-surface-variant block mb-1">Application Deadline</span>
+<p class="font-headline font-bold text-xl text-primary-container">Oct 15, 2026</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-right">
+<p class="text-xs text-on-surface-variant">Posted 2 days ago</p>
+<p class="text-xs text-on-surface-variant">142 applicants</p>
+</div>
+<div class="flex -space-x-3">
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="professional portrait of woman designer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADUiOykFlSvjthNL3qa0kvMPK8aMzTFFFrxtm4R71f6c_NvhC9ti6dXf4zKhQjas_rsfpmAbzaX14r0zISNgl9p3_TLsABRwGUdTyIY0p6HoJI9tHgUozoRVk31G92fF_ZdiCcWj4VMfchCqmwsUDTYh2iRR6Wekv8olp8FfLxSjD06l3D8m6i64V249KmKGxxhdY5VS7G77XHB-0dxmTLJDaDCKlOs5tt9YKQkqhKZF8cz_YgiZXnFMbpYSkjOArMLHhJkbtQQVA"/>
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="professional portrait of man designer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqnJF3p5baCblF8FfRU_hwuGApxeXgtGAK66vQbdzqOmzjl98Emg3AkMwdyyWTz5B3YBemoYWGDId8-x44fONr5zy0rGJ4U5IZFv4FE4CqMP4nQI67x1Bb8rpzO0LCWxvVTUIafVPszjwS4TIRbvQDPheMjinXOTERZ--rR36LtKjAze3DlUmOXmKPsu31tqwlXk90v8IXHJzOhdxOawaeRTSjmJErgtK2fudjEekd2gZZdO5mfMed8gb3TdlIds1DpnC1D0wOAuo"/>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-on-surface">+140</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Fixed CTA Button -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-full max-w-md px-6 z-[60]">
+<button class="w-full h-16 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-headline font-extrabold text-lg tracking-wide apply-glow active:scale-95 transition-all flex items-center justify-center gap-3">
+            Apply Now
+            <span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full border border-[#444852]/20 bg-[#202633]/60 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex justify-around items-center px-4 z-50 h-20">
+<a class="flex flex-col items-center justify-center text-[#ebedfb]/50 p-3 hover:text-[#9ba8ff] transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-xs font-medium uppercase tracking-wider">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ebedfb]/50 p-3 hover:text-[#9ba8ff] transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-['Inter'] text-xs font-medium uppercase tracking-wider">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#3D5AFE] to-[#a68cff] text-white rounded-full p-3 scale-110 -translate-y-2 shadow-lg" href="#">
+<span class="material-symbols-outlined" data-icon="assignment_turned_in">assignment_turned_in</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-wider mt-1">Applications</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ebedfb]/50 p-3 hover:text-[#9ba8ff] transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-xs font-medium uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

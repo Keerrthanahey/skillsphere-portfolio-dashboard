@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillSphere | Sign In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#9ba8ff",
+              "surface-container-low": "#0f131d",
+              "on-primary": "#001c8e",
+              "on-primary-fixed": "#000000",
+              "error-container": "#a70138",
+              "error": "#ff6e84",
+              "on-tertiary-fixed-variant": "#005762",
+              "surface-container-highest": "#202633",
+              "secondary-fixed": "#d8caff",
+              "secondary-dim": "#7e51ff",
+              "on-secondary-container": "#e4daff",
+              "secondary-container": "#591adc",
+              "primary-fixed": "#8999ff",
+              "on-error": "#490013",
+              "tertiary": "#81ecff",
+              "tertiary-fixed-dim": "#00d4ec",
+              "secondary": "#a68cff",
+              "surface-tint": "#9ba8ff",
+              "on-surface": "#ebedfb",
+              "background": "#0a0e17",
+              "outline-variant": "#444852",
+              "on-secondary": "#25006b",
+              "on-secondary-fixed": "#3b00a0",
+              "on-primary-fixed-variant": "#001a88",
+              "inverse-on-surface": "#515560",
+              "surface-container-high": "#1a1f2c",
+              "tertiary-dim": "#00d4ec",
+              "on-tertiary-container": "#004d57",
+              "on-tertiary-fixed": "#003840",
+              "surface-container-lowest": "#000000",
+              "inverse-surface": "#faf9ff",
+              "primary-fixed-dim": "#778aff",
+              "tertiary-container": "#00e3fd",
+              "on-secondary-fixed-variant": "#591bdc",
+              "surface": "#0a0e17",
+              "on-tertiary": "#005762",
+              "surface-dim": "#0a0e17",
+              "surface-bright": "#262c3a",
+              "on-primary-container": "#001470",
+              "outline": "#727581",
+              "error-dim": "#d73357",
+              "on-error-container": "#ffb2b9",
+              "primary-container": "#8999ff",
+              "on-surface-variant": "#a7abb7",
+              "secondary-fixed-dim": "#cabaff",
+              "surface-variant": "#202633",
+              "tertiary-fixed": "#00e3fd",
+              "primary-dim": "#4963ff",
+              "inverse-primary": "#2949ef",
+              "on-background": "#ebedfb",
+              "surface-container": "#151925"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(32, 38, 51, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(68, 72, 82, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #9ba8ff, #a68cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col overflow-x-hidden">
+<!-- Top Navigation Suppression (Transactional Page) -->
+<!-- Navigation Drawer & Bottom Nav suppressed for Login Flow -->
+<main class="flex-grow flex flex-col md:flex-row min-h-screen">
+<!-- Left Section: Branding & Illustration (Asymmetric Editorial Style) -->
+<section class="hidden md:flex md:w-1/2 relative overflow-hidden flex-col justify-center px-16 lg:px-24">
+<!-- Background Aesthetic -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="abstract flowing 3D waves in deep indigo and electric purple with soft grain texture and ethereal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Hu13ITxsgbEytCQUPtyWaRUxcG6ENJuZA0Z6puFL8bTsrqsqP8Am2uUz7KWOppYWQHWpkbrJ43lfAXquuH6KYWNFCRf9vuJ6IcKXPzKVm5kQBdPbY-xCr4PPt3oC0AyRgom9IpuTbQ6CqtkVs2j1IdHbw3GyNFiNZHq1UBpp4XaDOq6h7vkiMhZLRYmrsE7yuhdbhQRDBr2Jgdn074FkDPEMMHnr0IerPy4jraamJns6AMTyWW32utsvXmYEbr1H44u86SENN4A"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-primary/10"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 space-y-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="bubble_chart">bubble_chart</span>
+<h1 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface">SkillSphere</h1>
+</div>
+<div class="space-y-4 max-w-lg">
+<h2 class="font-headline text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-on-surface">
+                        Curate your <span class="text-gradient">Professional Destiny.</span>
+</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                        Join the elite ecosystem of digital curators and creative leaders. Transform your academic journey into a high-end exhibition.
+                    </p>
+</div>
+<div class="pt-8">
+<div class="flex items-center gap-4 p-4 rounded-xl glass-card w-fit">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-surface" data-alt="portrait of a creative professional student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Db91a1wkuHIOgjEsAYVQo_jDieh5zJmSM1RPp0YxpM6xwA3Awcq75U-DAnXRM0trRRrwxwOcyJKqbroCpl2UULL4GDdepIFtbjBhhRcm3-sEZ7o1SJqh_Xz6k0Ht-7S6hEAC8c1KJNk9h8JMxOgiVBNMvaoB9kCg33E-3iiPklhR2wOtzzVmnhSaabkPqC7ZHRPI7W4WkzqsAJupHbX6VGW6JeTrJythRFTiKpyGY-kCm5sesQB1eL6j5ALUfj5IaQ_7eB_9kkU"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface" data-alt="portrait of a tech curator" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5hvjH_iJ4A9lGm0fLhb3Fg_8KIPIJTLS_xr4z_XAY6LXlA7oDtaaJ40GiOhlCOFUc7I60CTjx2bO_2SUxHJhYhaHiBnCAmOW9WonabIgxfAvfIBnBuNlHQBdDsKWv3YqJscGKaNby-rzdmt1KW6w95PJKAhbF5jr7FuBkWuBvwgwY8jSfAkEscJ8z4u-hnKOk88Dv9VXCrVSA-D8lFpal2FfEX69Z6yxy0mUW2VF4piPiByfRkZrjiyo7lN2J_NjRlES6qQvMA4Q"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface" data-alt="portrait of a digital arts student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1YfcXpDKqTka71VVpTy_dmUqbWOCSk-PSOgYf1l0ZPBoamfKy_lVvZug4uIC9Q32fDdpUGNx90GPkALim-KWwijuHQTsX43WhkBD_hUkvfTcSvif5iSPLKJowpkow7LZBwhdMIWSzO3OBWgV550zIkjfO59iT39qQQSP6B8M_aZAW8uqoP_1VGwwpIIsUxVHC9p3_8t6iMW8Clt_TA6rSXuNPqOlKZTkN8NDHSrc6jDrZPm5QImDfdyHW94Nbmq6JXFIfuxLNZW4"/>
+</div>
+<p class="text-sm font-medium text-primary-container">Joined by 2k+ curators this month</p>
+</div>
+</div>
+</div>
+<!-- Floating Decoration -->
+<div class="absolute bottom-20 right-0 w-64 h-64 bg-secondary/10 blur-[100px] rounded-full"></div>
+</section>
+<!-- Right Section: Login Form (Glassmorphism Focus) -->
+<section class="w-full md:w-1/2 flex items-center justify-center p-6 sm:p-12 relative">
+<!-- Mobile Background Elements -->
+<div class="md:hidden absolute inset-0 -z-10 bg-gradient-to-b from-surface-container-low to-background"></div>
+<div class="w-full max-w-md space-y-10">
+<!-- Mobile Header -->
+<div class="md:hidden text-center space-y-2">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="bubble_chart">bubble_chart</span>
+<h1 class="font-headline text-2xl font-bold">SkillSphere</h1>
+</div>
+<div class="space-y-2 text-center md:text-left">
+<h3 class="font-headline text-3xl font-bold tracking-tight">Welcome Back</h3>
+<p class="text-on-surface-variant font-medium">Continue your curation journey</p>
+</div>
+<!-- Glass Card Form -->
+<div class="glass-card p-8 rounded-3xl shadow-2xl relative overflow-hidden group">
+<form class="space-y-6">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-xl" data-icon="mail">mail</span>
+<input class="w-full bg-surface-container-lowest/30 border border-outline-variant/20 rounded-xl py-4 pl-12 pr-4 text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-300" placeholder="curator@skillsphere.edu" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Password</label>
+<a class="text-xs font-bold text-primary hover:text-secondary transition-colors" href="#">Forgot?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-xl" data-icon="lock">lock</span>
+<input class="w-full bg-surface-container-lowest/30 border border-outline-variant/20 rounded-xl py-4 pl-12 pr-4 text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-300" placeholder="••••••••" type="password"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline cursor-pointer hover:text-on-surface transition-colors" data-icon="visibility">visibility</span>
+</div>
+</div>
+<!-- Sign In Button -->
+<button class="w-full py-4 bg-gradient-to-r from-secondary-dim to-primary-dim text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 group" type="submit">
+<span>Sign In</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-outline-variant/20"></div>
+<span class="flex-shrink mx-4 text-xs font-bold text-outline uppercase tracking-widest">Or Continue With</span>
+<div class="flex-grow border-t border-outline-variant/20"></div>
+</div>
+<!-- Google Login -->
+<button class="w-full py-4 bg-surface-container-highest/40 hover:bg-surface-container-highest/60 border border-outline-variant/20 rounded-xl text-on-surface font-semibold transition-all duration-300 flex items-center justify-center gap-3" type="button">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+<span>Google Account</span>
+</button>
+</form>
+</div>
+<!-- Footer Links -->
+<div class="flex flex-col items-center gap-6">
+<p class="text-sm text-on-surface-variant font-medium">
+                        Don't have an account? <a class="text-primary font-bold hover:underline decoration-primary/30 underline-offset-4" href="#">Create Curator ID</a>
+</p>
+<!-- Tour Link (High Contrast CTA) -->
+<a class="flex items-center gap-2 px-6 py-2 rounded-full bg-tertiary/10 text-tertiary text-sm font-bold border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300 group" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+                        Take a quick tour
+                        <span class="material-symbols-outlined text-lg group-hover:translate-x-0.5 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Success Simulation (Hidden by default) -->
+<div class="hidden fixed inset-0 z-[100] bg-background/90 backdrop-blur-xl flex flex-col items-center justify-center space-y-6" id="loading-overlay">
+<div class="relative w-20 h-20">
+<div class="absolute inset-0 border-4 border-primary/20 rounded-full"></div>
+<div class="absolute inset-0 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+<span class="material-symbols-outlined absolute inset-0 flex items-center justify-center text-primary text-3xl" data-icon="bubble_chart">bubble_chart</span>
+</div>
+<div class="text-center space-y-2">
+<h4 class="font-headline text-2xl font-bold tracking-tight">Syncing Portfolio</h4>
+<p class="text-on-surface-variant animate-pulse">Initializing curator environment...</p>
+</div>
+</div>
+<!-- Error State Toast (Demonstrative) -->
+<div class="hidden fixed bottom-12 left-1/2 -translate-x-1/2 z-[110] glass-card px-6 py-3 rounded-2xl border-error/20 flex items-center gap-3 animate-bounce" id="error-toast">
+<span class="material-symbols-outlined text-error" data-icon="error">error</span>
+<p class="text-sm font-bold text-on-surface">Please fill in all curator credentials.</p>
+</div>
+</body></html>
